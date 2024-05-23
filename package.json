@@ -1,0 +1,21 @@
+{
+  "name": "llama-loreft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --max-old-space-size=4000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "circom_tester": "^0.0.20",
+    "circomlib-matrix": "^1.0.2",
+    "mocha": "^10.4.0"
+  }
+}
