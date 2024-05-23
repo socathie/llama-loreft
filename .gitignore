@@ -129,7 +129,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-circuit_js/
+*_js/
 *.zkey
 *.r1cs
 *.ptau

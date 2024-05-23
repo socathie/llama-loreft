@@ -17,9 +17,10 @@ describe("loreft test", function () {
     this.timeout(100000000);
 
     it("should return correct output", async () => {
-        const circuit = await wasm_tester(path.join("circuits", "circuit.circom"));
+        const circuit = await wasm_tester(path.join(__dirname, "test.circom"));
 
         const witness = await circuit.calculateWitness(INPUT, true);
+
 
         assert(Fr.eq(Fr.e(witness[0]),Fr.e(1)));
         for (let i = 0; i < 4096; i++) {
